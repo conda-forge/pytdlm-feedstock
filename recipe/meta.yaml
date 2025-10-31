@@ -1,5 +1,5 @@
 {% set name = "PyTDLM" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytdlm-{{ version }}.tar.gz
-  sha256: d86da31869a65d763e83113feef200475a18f7960f798a9b36a2783a16862ae6
+  sha256: d17f919c01d69de5674482f944e6b6356d7f9f1fbeb02806b38ead793071fba7
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.20.0
     - pandas >=1.3.0
+    - scipy >=1.8.0
     - tabulate >=0.9.0
     - tqdm >=4.60.0
 
